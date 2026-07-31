@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+
+<title>Meeting Room</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+
+<h1>
+Online Meeting Room
+</h1>
+
+
+
+<div class="video">
+
+
+<video id="video"
+autoplay>
+
+</video>
+
+
+</div>
+
+
+
+<button onclick="startVideo()">
+
+Start Camera
+
+</button>
+
+
+
+<button onclick="shareScreen()">
+
+Share Screen
+
+</button>
+
+
+
+<h2>
+Whiteboard
+</h2>
+
+
+<canvas id="board"
+width="500"
+height="300">
+
+</canvas>
+
+
+<br>
+
+
+<button onclick="clearBoard()">
+
+Clear
+
+</button>
+
+
+
+<h2>
+File Sharing
+</h2>
+
+
+<input type="file"
+onchange="uploadFile(event)">
+
+
+
+<h2>
+Chat
+
+</h2>
+
+
+<input id="message"
+placeholder="Type message">
+
+
+<button onclick="sendMessage()">
+
+Send
+
+</button>
+
+
+
+<div id="chat">
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
